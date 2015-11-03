@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_news"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="#FFFFFF" >
+
+    <TextView
+        android:id="@+id/tv_newstitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="test"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/iv_news"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/tv_newstitle"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/applogo" />
+
+    <TextView
+        android:id="@+id/tv_newsclasstext"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv_newstitle"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_news"
+        android:gravity="center_vertical"
+        android:text="分类 : "
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tv_newstag"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/tv_newsclasstext"
+        android:layout_toRightOf="@id/tv_newsclasstext"
+        android:gravity="center_vertical"
+        android:text="test"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tv_newsconuttext"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv_newsclasstext"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_news"
+        android:gravity="center_vertical"
+        android:text="浏览次数 : "
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tv_newscount"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/tv_newsconuttext"
+        android:layout_toRightOf="@id/tv_newsconuttext"
+        android:gravity="center_vertical"
+        android:text="100"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tv_newstimetext"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv_newsconuttext"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_news"
+        android:gravity="center_vertical"
+        android:text="发布时间 : "
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tv_newstime"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/tv_newstimetext"
+        android:layout_toRightOf="@id/tv_newstimetext"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="2016"
+        android:textColor="#000000" />
+
+</RelativeLayout>

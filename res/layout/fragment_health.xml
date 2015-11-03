@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_height="match_parent" >
+    
+  <com.handmark.pulltorefresh.library.PullToRefreshListView 
+        android:id="@+id/lv_health"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="2dp"
+        android:divider="#F4F4F4"
+        android:background="#FFFFFF"/>
+    
+</LinearLayout>

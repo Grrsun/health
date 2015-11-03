@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="#FFFFFF" >
+
+   <TextView
+        android:id="@+id/tv_cookname"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="test"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/iv_cook"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/tv_cookname"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/applogo" />
+	<TextView 
+	    android:id="@+id/tv_cookclasstext"
+	    android:layout_marginLeft="10dp"
+	    android:layout_below="@id/tv_cookname"
+	    android:layout_toRightOf="@id/iv_cook"
+	    android:layout_width="wrap_content"
+	    android:layout_height="40dp"
+	    android:textColor="#000000"
+	    
+	    android:gravity="center_vertical"
+	    android:text="分类 : " />
+    <TextView
+        android:id="@+id/tv_cooktag"
+        android:layout_toRightOf="@id/tv_cookclasstext"
+        android:layout_alignTop="@id/tv_cookclasstext"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="test"
+        android:singleLine="true"
+        android:textColor="#000000"
+       />
+	<TextView 
+	    android:id="@+id/tv_cookconuttext"
+	    android:layout_marginLeft="10dp"
+	    android:layout_below="@id/tv_cookclasstext"
+	    android:layout_toRightOf="@id/iv_cook"
+	    android:layout_width="wrap_content"
+	    android:layout_height="40dp"
+	    android:textColor="#000000"
+	    android:gravity="center_vertical"
+	    android:text="浏览次数 : " />
+	<TextView
+        android:id="@+id/tv_cookcount"
+        android:layout_toRightOf="@id/tv_cookconuttext"
+        android:layout_alignTop="@id/tv_cookconuttext"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="100"
+        android:textColor="#000000"
+       />
+	<TextView 
+	    android:id="@+id/tv_cookfoodtext"
+	    android:layout_marginLeft="10dp"
+	    android:layout_below="@id/tv_cookconuttext"
+	    android:layout_toRightOf="@id/iv_cook"
+	    android:layout_width="wrap_content"
+	    android:layout_height="40dp"
+	    android:textColor="#000000"
+	    android:gravity="center_vertical"
+	    android:text="材料 : " />
+   <TextView
+        android:id="@+id/tv_cookfood"
+        android:layout_toRightOf="@id/tv_cookfoodtext"
+        android:layout_alignTop="@id/tv_cookfoodtext"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="鸡蛋"
+        android:singleLine="true"
+        android:textColor="#000000"
+       />
+
+</RelativeLayout>

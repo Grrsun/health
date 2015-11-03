@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   	>
+   	
+    <TextView 
+        android:id="@+id/tv_collectclass"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="[分类]"
+        android:textSize="18sp"/>
+    <TextView 
+        android:id="@+id/tv_collecttime"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/tv_collectclass"
+        android:textSize="10sp"
+        android:text="2015/10/15"/>
+    
+    <TextView 
+        android:id="@+id/tv_collecttitle"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@id/tv_collectclass"
+        android:layout_below="@+id/tv_collectclass"
+        android:text="标题"
+        android:textSize="18sp"
+        android:gravity="center_vertical"/>
+    
+
+</RelativeLayout>

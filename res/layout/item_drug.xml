@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    >
+    
+    <TextView
+        android:id="@+id/tv_drugname"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="test"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/iv_drug"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/tv_drugname"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/applogo" />
+	<TextView 
+	    android:id="@+id/tv_drugptypetext"
+	    android:layout_marginLeft="10dp"
+	    android:layout_below="@id/tv_drugname"
+	    android:layout_toRightOf="@id/iv_drug"
+	    android:layout_width="wrap_content"
+	    android:layout_height="40dp"
+	    android:textColor="#000000"
+	    android:gravity="center_vertical"
+	    android:text="功效 : " />
+    <TextView
+        android:id="@+id/tv_drugptype"
+        android:layout_toRightOf="@id/tv_drugptypetext"
+        android:layout_alignTop="@id/tv_drugptypetext"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="test"
+        android:textColor="#000000"
+       />
+	<TextView 
+	    android:id="@+id/tv_drugconuttext"
+	    android:layout_marginLeft="10dp"
+	    android:layout_below="@id/tv_drugptypetext"
+	    android:layout_toRightOf="@id/iv_drug"
+	    android:layout_width="wrap_content"
+	    android:layout_height="40dp"
+	    android:textColor="#000000"
+	    android:gravity="center_vertical"
+	    android:text="浏览次数 : " />
+	<TextView
+        android:id="@+id/tv_drugcount"
+        android:layout_toRightOf="@id/tv_drugconuttext"
+        android:layout_alignTop="@id/tv_drugconuttext"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="100"
+        android:textColor="#000000"
+       />
+	<TextView 
+	    android:id="@+id/tv_drugfactorytext"
+	    android:layout_marginLeft="10dp"
+	    android:layout_below="@id/tv_drugconuttext"
+	    android:layout_toRightOf="@id/iv_drug"
+	    android:layout_width="wrap_content"
+	    android:layout_height="40dp"
+	    android:textColor="#000000"
+	    android:gravity="center_vertical"
+	    android:text="工厂 : " />
+   <TextView
+        android:id="@+id/tv_drugfactory"
+        android:layout_toRightOf="@id/tv_drugfactorytext"
+        android:layout_alignTop="@id/tv_drugfactorytext"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="制药集团"
+        android:singleLine="true"
+        android:textColor="#000000"
+       />
+</RelativeLayout>

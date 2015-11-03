@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_hospital"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="#FFFFFF" >
+
+    <TextView
+        android:id="@+id/tv_hospitalname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="test"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/iv_hospital"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/tv_hospitalname"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/applogo" />
+
+    <TextView
+        android:id="@+id/tv_hospitalleveltext"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv_hospitalname"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_hospital"
+        android:gravity="center_vertical"
+        android:text="医院等级 : "
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tv_hospitallevel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/tv_hospitalleveltext"
+        android:layout_toRightOf="@id/tv_hospitalleveltext"
+        android:gravity="center_vertical"
+        android:text="test"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tv_hospitaldistancetext"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv_hospitalleveltext"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_hospital"
+        android:gravity="center_vertical"
+        android:text="距离: "
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tv_hospitaldistance"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/tv_hospitaldistancetext"
+        android:layout_toRightOf="@id/tv_hospitaldistancetext"
+        android:gravity="center_vertical"
+        android:text="100"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tv_hospitaladdresstext"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv_hospitaldistancetext"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv_hospital"
+        android:gravity="center_vertical"
+        android:text="地址: "
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tv_hospitaladdress"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/tv_hospitaladdresstext"
+        android:layout_toRightOf="@id/tv_hospitaladdresstext"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="2016"
+        android:textColor="#000000" />
+
+</RelativeLayout>
